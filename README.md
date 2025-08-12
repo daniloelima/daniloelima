@@ -3,6 +3,7 @@ Graduado em Ciência da Computação pela Universidade Federal do Espirito Santo
 Estudante de Desenvolvimento de Jogos Digitais pelo Centro Estadual de Educação Técnica (CEET) - Vasco Coutinho
 
 --
+
 Bachelor's degree in Computer Science from the Federal University of Espírito Santo (UFES).
 Student of Digital Game Development at the Vasco Coutinho State Center for Technical Education (CEET)
 
