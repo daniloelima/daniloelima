@@ -1,0 +1,185 @@
+:root{
+    --color-1:#22223b;
+    --color-2:#4a4e69;
+    --color-3:#9a8c98;
+    --color-4:#c9ada7;
+    --color-5:#f2e9e4;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+body{
+    background-image: url("/assets/images/bg.png");
+    background-size: 200px;
+    background-color: var(--color-2);
+    color: var(--color-5);
+    margin: 0;
+    animation: move-bg 60s infinite linear;
+}
+
+@keyframes move-bg{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 100% 100%;
+    }
+}
+header{
+    position: fixed;
+    height: 50px;
+    width: 100vw;
+    background-color: var(--color-1);
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.header-nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 20px;
+
+    font-size: 1.3em;
+    color: var(--color-5);
+}
+header a, header a:visited, header a:hover, header a:active{
+    color: var(--color-5);
+}
+
+footer{
+    position: fixed;
+    height: 40px;
+    width: 100vw;
+    bottom: 0;
+    left: 0px;
+    background-color: var(--color-1);
+    color: var(--color-5);
+    z-index: 100;
+}
+
+footer a, footer a:visited, footer a:hover, footer a:active {
+    color: var(--color-5);
+}
+.footer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+nav{
+    display: flex;
+    gap: 10px;
+}
+main{
+    margin: 0;
+    padding: 100px 0px;
+    max-width: 100vw;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column  ;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description{
+    color: var(--color-1);
+
+    border: 3px solid var(--color-1);
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px var(--color-1);
+    width: 500px;
+    margin-left: 100px;
+    background-color: var(--color-4);
+    padding: 20px;
+
+    font-size: larger;
+    height: 200px;
+
+    transition: 400ms;
+}
+.description:hover{
+    transform: scale(1.05);
+}
+#profile-pic{
+    width: 300px;
+    border-radius: 70px;
+    border: 3px solid var(--color-1);
+    box-shadow: 10px 10px 10px var(--color-1);
+
+    transition: 400ms;
+}
+#profile-pic:hover{
+    transform: scale(1.05);
+}
+
+
+h1{
+    font-size: 3em;
+    text-shadow: 10px 10px 10px var(--color-1);
+}
+
+.games-list, .project-list{
+    max-width: 90vw;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+.game-item, .project-item{
+    min-height: 280px;
+    width: 380px;
+    padding: 20px;
+    border-radius: 40px;
+    border: 2px solid var(--color-1);
+    box-shadow: 10px 10px 10px var(--color-1);
+    background-color: var(--color-3);
+
+    color: var(--color-1);
+    transition: 400ms;
+
+    display: flex;
+    flex-direction: column;
+}
+.game-item:hover, .project-item:hover{
+    transform: scale(1.05);
+}
+
+.game-pic, .project-pic{
+    max-width: 80%;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px var(--color-2);
+}
+
+.project-pic{
+    background-color: var(--color-2);
+    padding-bottom: 10px;
+}
+.game-categories{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+.categorie{
+    background-color: var(--color-4);
+    border: 1px solid var(--color-1);
+    color: var(--color-1);
+    border-radius: 5px;
+    padding: 3px;
+}
+.item-title{
+    text-shadow: 5px 5px 5px var(--color-2);
+}
